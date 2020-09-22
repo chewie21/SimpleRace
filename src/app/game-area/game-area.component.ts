@@ -309,7 +309,6 @@ export class GameAreaComponent {
       const enemy = document.createElement('div');
       enemy.classList.add('enemy');
       let counter = Math.floor(Math.random() * Math.floor(3));
-      console.log(counter);
       if(counter === 0) {
         enemy.style.backgroundImage = "url(./assets/enemy.png)"
       } else if (counter === 1) {
@@ -415,6 +414,7 @@ export class GameAreaComponent {
         //Запускаем анимации
         this.stateCar = 'none';
         setTimeout( () => {
+          this.vieBestScore.emit(true);
           this.vieScore.emit(false);
           this.stateEnemy = 'none';
           this.stateTopTunnel = 'none';
