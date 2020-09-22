@@ -1,0 +1,22 @@
+<div class="game" #game>
+  <div class="topTunnel" [@topTunnel]="stateTopTunnel"></div>
+  <div class="row justify-content-center">
+    <div class="col-auto p-0">
+      <div class="roadside" [@leftRoadside]="stateLeftRoadside"></div>
+    </div>
+    <div class="col-auto p-0">
+      <div class="gameArea" #gameArea [@gameArea]="stateGameArea">
+        <div class="userCar" [@car]="stateCar" #userCar></div>
+      </div>
+    </div>
+    <div class="col-auto p-0">
+      <div class="roadside" [@rightRoadside]="stateRightRoadside"></div>
+    </div>
+  </div>
+  <div class="downTunnel" [@downTunnel]="stateDownTunnel"></div>
+</div>
+
+
+
+
+

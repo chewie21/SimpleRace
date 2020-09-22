@@ -1,0 +1,63 @@
+.game {
+  display: none;
+  place-content: center;
+}
+.gameArea {
+  position: relative;
+  width: 300px;
+  height: 600px;
+  background: #212529;
+}
+.roadside {
+  width: 25px;
+  height: 600px;
+  background: transparent url('src/assets/roadside.png') center / cover no-repeat;
+  z-index: 3;
+}
+.topTunnel {
+  background: transparent url('src/assets/top.png') center / cover no-repeat;
+  margin: auto;
+  height: 50px;
+  width: 400px;
+  z-index: 3;
+  position: relative;
+}
+.downTunnel {
+  background: transparent url('src/assets/down.png') center / cover no-repeat;
+  margin: auto;
+  height: 50px;
+  width: 400px;
+  z-index: 3;
+  position: relative;
+}
+
+
+.line {
+  position: absolute;
+  width: 10px;
+  height: 50px;
+  background: #f8f9fa;
+  left: 145px;
+  z-index: 1;
+}
+
+.userCar {
+  width: 50px;
+  height: 100px;
+  background: transparent url('src/assets/player2.png') center / cover no-repeat;
+  position: absolute;
+  left: 175px;
+  bottom: -100px;
+  z-index: 2;
+}
+
+.enemy {
+  width: 50px;
+  height: 100px;
+  background: transparent url('src/assets/enemy2.png') center / cover no-repeat;
+  position: absolute;
+  left: 125px;
+  bottom: 10px;
+  z-index: 2;
+}
+
